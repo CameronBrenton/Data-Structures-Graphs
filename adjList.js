@@ -1,3 +1,5 @@
+// Adjacency List
+
 class Node {
 	constructor(value) {
 		this.value = value;
