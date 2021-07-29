@@ -35,4 +35,12 @@ const findAdjacentNodes = (node) => {
 
 // isConnected
 
-console.log(findAdjacentNodes('C'));
+const isConnected = (node1, node2) => {
+	return edges.some((edge) => {
+		return edge.indexOf(node1) > -1 && edge.indexOf(node2) > -1;
+	});
+}
+
+console.log(isConnected('C', 'D'));
+
+console.log(isConnected('E', 'F'));
